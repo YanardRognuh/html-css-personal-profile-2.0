@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100dvh;
+  background-image: url(/assets/images/background.png);
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+body > header {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 85%);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  align-items: center;
+}
+
+.navigation .tombol {
+  display: none;
+}
+
+.navigation #logo {
+  width: 10rem;
+  height: auto;
+}
+
+.navigation nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation nav ul li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.navigation nav ul li a:hover {
+  color: rgb(230, 60, 0);
+}
+
+header .hero-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .hero-header h1 {
+  font-size: 6rem;
+  color: rgb(230, 60, 0);
+  text-align: center;
+}
+
+header .hero-header p {
+  font-size: 2rem;
+}
+
+header .hero-header #text {
+  color: rgb(255, 68, 0);
+  font-weight: bold;
+}
+
+header .hero-header #cursor {
+  font-weight: 300;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+main .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+article {
+  padding: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: rgb(255, 68, 0);
+}
+
+img {
+  width: 100%;
+}
+
+main .content .about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .content .about p {
+  text-align: justify;
+}
+
+main .content .hard-skills img {
+  width: 100%;
+  /* height: auto; */
+}
+
+main .content .interest .cards {
+  display: flex;
+  gap: 1rem;
+}
+
+main .content .interest .cards .card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  aspect-ratio: 5/6;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+  border: black solid 1px;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 1s;
+  background-color: white;
+}
+
+main .content .interest .cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+main .content .interest .cards .card img {
+  margin: auto;
+}
+
+main .content .hard-skills ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .content .hard-skills ul li {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  height: 8rem;
+  border: black solid 1px;
+}
+
+main .content .hard-skills ul li img {
+  flex: 1;
+  object-fit: contain;
+  height: 100%;
+}
+
+main .content .hard-skills ul li p {
+  flex: 3;
+  height: fit-content;
+  margin: auto;
+  font-weight: bolder;
+  color: rgb(255, 68, 0);
+  text-align: justify;
+}
+
+main .profile {
+  flex: 1;
+  height: fit-content;
+}
+
+main .profile * {
+  width: 100%;
+}
+
+main .profile .profile-information header,
+main .profile .profile-information section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main .profile .profile-information p {
+  text-align: center;
+}
+
+main .profile .profile-information img {
+  border-radius: 12px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  justify-self: flex-end;
+  background-color: hsl(0, 0%, 85%);
+}
+
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  td {
+    font-size: 0.5rem;
+  }
+
+  main .content .hard-skills ul li p {
+    font-size: 0.75rem;
+  }
+
+  main .content .interest .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header .hero-header h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation .menu {
+    display: none;
+    border-radius: 0px 0px 12px 12px;
+  }
+
+  .navigation .tombol {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .navigation .tombol:hover {
+    color: rgb(230, 60, 0);
+  }
+
+  .navigation .menu.active {
+    display: block;
+    position: absolute;
+    top: 56px;
+    background-color: hsl(0, 0%, 85%);
+    padding: 10px 20px;
+    right: 0;
+    width: 100%;
+  }
+
+  .menu.active li a {
+    padding: 10px;
+  }
+
+  header .hero-header p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main .content {
+    order: 1;
+  }
+
+  main .content .hard-skills ul li {
+    align-items: center;
+    flex-direction: column;
+    height: 12rem;
+  }
+
+  main .content .hard-skills ul li img {
+    height: 50%;
+    flex: 1;
+  }
+
+  main .content .hard-skills ul li p {
+    flex: 3;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  header .hero-header h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main .content {
+    order: 1;
+  }
+
+  main .content .hard-skills ul li {
+    align-items: center;
+  }
+
+  main .content .hard-skills ul li img {
+    height: 50%;
+    flex: 1;
+  }
+
+  main .content .hard-skills ul li p {
+    flex: 3;
+  }
+}

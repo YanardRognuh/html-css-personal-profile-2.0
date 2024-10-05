@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <img src="/assets/images/logo.png" alt="logo" id="logo" />
+        <nav id="navlinks">
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <li><a href="#hard-skills">Skills</a></li>
+          </ul>
+        </nav>
+        <div class="tombol" id="show-menu" onclick="showMenu()">&#9776;</div>
+      </div>
+      <div class="hero-header">
+        <h1>Ardian Nugroho</h1>
+        <p><span id="text"></span><span id="cursor">|</span></p>
+      </div>
+    </header>
+    <main>
+      <section class="content">
+        <article class="about" id="about">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Ardian Nugroho, a passionate web developer with over 1
+            years of experience in building dynamic and responsive websites. I
+            specialize in frontend technologies like HTML, CSS, JavaScript, and
+            React. I love turning complex problems into simple, beautiful
+            interfaces.
+          </p>
+          <p>
+            Beyond coding, I have a strong eye for design and user experience,
+            ensuring that every project I work on is not only functional but
+            also visually appealing and intuitive. My background in UI/UX design
+            allows me to create seamless interactions and user-centered
+            interfaces. I'm also passionate about game development, where I
+            combine my love for coding and creativity to build engaging digital
+            experiences. Whether it's crafting web solutions, designing
+            interfaces, or developing games, I'm always eager to explore new
+            tools and push my skills further.
+          </p>
+        </article>
+        <article class="interest" id="interest">
+          <h2>Interests</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Web Development</h3>
+              <img
+                src="/assets/images/web-development.jpg"
+                alt="Web Development"
+              />
+            </div>
+            <div class="card">
+              <h3>UI/UX Designer</h3>
+              <img src="/assets/images/ui-ux-design.webp" alt="UI UX Design" />
+            </div>
+            <div class="card">
+              <h3>Game Development</h3>
+              <img
+                src="/assets/images/game-development.png"
+                alt="Game Development"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="hard-skills" id="hard-skills">
+          <h2>Hard Skills</h2>
+          <ul>
+            <li>
+              <img
+                src="/assets/images/html-css-js.webp"
+                alt="HTML, CSS, JavaScript"
+              />
+              <p>
+                Proficient in creating responsive designs using HTML, CSS, and
+                JavaScript
+              </p>
+            </li>
+            <li>
+              <img
+                src="/assets/images/react-next-js.png"
+                alt="React, Next.js"
+              />
+              <p>
+                Experienced with building modern applications using React and
+                Next.js frameworks
+              </p>
+            </li>
+            <li>
+              <img src="/assets/images/git.png" alt="GIT" />
+              <p>
+                Highly skilled in using Git for effective version control and
+                team collaboration
+              </p>
+            </li>
+            <li>
+              <img src="/assets/images/canva-figma.jpeg" alt="Canva, Figma" />
+              <p>
+                Familiar with utilizing Canva and Figma for creative design
+                projects
+              </p>
+            </li>
+            <li>
+              <img src="/assets/images/unity.png" alt="Unity" />
+              <p>
+                Knowledgeable in developing games using Unity with a strong
+                understanding of its tools
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <aside class="profile">
+        <article class="profile-information">
+          <header>
+            <h2>Profile</h2>
+            <p>Ardian Nugroho</p>
+            <figure>
+              <img
+                src="/assets/images/profile-image.jpeg"
+                alt="profile image"
+              />
+            </figure>
+          </header>
+          <section>
+            <h3>Contact Information:</h3>
+            <table>
+              <tr>
+                <td>Email:</td>
+                <td>ardiannugroho235@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td>+123-456-789</td>
+              </tr>
+              <tr>
+                <td>Location:</td>
+                <td>Jakarta, Indonesia</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2024 Ardian Nugroho. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/scripts/text-write.js"></script>
+    <script src="/scripts/menu.js"></script>
+  </body>
+</html>
